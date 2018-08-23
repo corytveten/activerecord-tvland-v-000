@@ -6,9 +6,9 @@ class Actor < ActiveRecord::Base
     self.first_name + " " + last_name
   end
 
-#  def list_roles
-#    self.characters.each do |char|
-#      char.name
-#    end
-#  end
+  def list_roles
+    self.characters.each do |char|
+      char.name + "-" + char.show.name
+    end
+  end
 end
