@@ -10,5 +10,5 @@ class Actor < ActiveRecord::Base
 #    self.characters.each do |char|
 #      char.name
 #    end
-  end
+#  end
 end
